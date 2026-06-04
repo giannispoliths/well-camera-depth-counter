@@ -1,5 +1,4 @@
 # well-camera-depth-counter
-
 A real-time depth tracking system built for borehole inspection 
 cameras, developed under tight time constraints as a complete 
 hardware + software solution.
@@ -8,8 +7,10 @@ hardware + software solution.
 
 Borehole inspection cameras typically display live video but 
 provide no way to record or overlay the current cable depth 
-on the footage. This makes it hard to log findings accurately 
+on the footage.usually This makes it hard to log findings accurately 
 during geological surveys.
+
+The PASI Well-Camera.1N borehole inspection system had no built-in way to record cable depth during surveys. Rather than purchasing the manufacturer's official encoder accessory (€400-800+), my custom solution had a total cost of under €20.
 
 ## The Solution
 
@@ -32,31 +33,31 @@ A custom depth counter system that:
 
 ## Software Stack
 
-- **Arduino (C++)** — reads encoder via Pin Change Interrupts,
+- **Arduino (C++)** - reads encoder via Pin Change Interrupts,
   streams depth over Serial at 200ms intervals
-- **Python + Tkinter** — reads Serial, writes to depth.txt,
+- **Python + Tkinter** - reads Serial, writes to depth.txt,
   provides simple GUI with COM port selection and depth reset
-- **OBS Studio** — reads depth.txt via Text GDI+ source,
+- **OBS Studio** - reads depth.txt via Text GDI+ source,
   overlays depth on video in real time
-- **PyInstaller** — packages Python app into standalone .exe
+- **PyInstaller** - packages Python app into standalone .exe
 
 ## Features
 
 - Real-time depth display accurate to 0.01m
 - Zero-depth reset button
-- Standalone .exe — no Python installation needed on target machine
-- Persistent OBS integration — set up once, works every time
-- Mechanically reinforced for field/vibration environments
+- Standalone .exe no Python installation needed on target machine
+- Persistent OBS integration  set up once, works every time
+- Mechanically reinforced for rough field environments
 
 ## Build Notes
 
 All components were soldered onto a prototype PCB. Connections 
 were mechanically secured with hot glue to ensure reliability 
-in field conditions where vibration is a factor. The encoder 
-was mounted directly on the cable reel mechanism.
+in field conditions where rough conditions is a factor.The encoder 
+was mounted directly on the cable reel mechanism by a mechanic.
 
 The entire system was designed, assembled, and deployed within 
-a very short timeframe to meet an urgent operational deadline.
+a short timeframe due to urgent operational deadline.
 
 ## Configuration
 
@@ -74,7 +75,7 @@ app or OBS.
 
 Arduino firmware and Python application were developed with 
 the assistance of Claude. Hardware assembly, 
-soldering, mechanical mounting, and system integration were 
+soldering, mechanical mounting inside the project box, and system integration were 
 done manually.
 
 ## Requirements
