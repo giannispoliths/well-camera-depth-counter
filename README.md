@@ -21,7 +21,10 @@ A custom depth counter system that:
 
 ## System Overview
 ![Hardware](viber_image_2026-06-04_11-27-35-725.jpg)
+
 ![finalized product](viber_image_2026-06-04_11-27-35-680.jpg)
+
+![software in action](<Screenshot 2026-06-03 205620.png>)
 
 ## Hardware
 
