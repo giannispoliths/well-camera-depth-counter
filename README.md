@@ -30,7 +30,7 @@ A custom depth counter system that:
 
 - Arduino Nano (CH340 clone)
 - Incremental Rotary Encoder 400P/R
-- Custom prototype PCB (40×60mm)
+- Prototype board (40×60mm)
 - 1kΩ pull-up resistors on signal pins A4/A5
 - Hot glue mechanical reinforcement for field conditions
 
