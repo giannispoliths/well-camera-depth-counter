@@ -7,7 +7,7 @@ import os
 import sys
 
 OUTPUT_FILE = "depth.txt"
-OUTPUT_FORMAT = "{:.2f}m"
+OUTPUT_FORMAT = "Βάθος: {:.2f} m"
 
 class DepthApp:
     def __init__(self):
